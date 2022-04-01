@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+        <nav class="navbar">
+            <div class="container">
+                <h3>library</h3>
+            </div>
+        </nav>
+
+            <div class="add_book_container">
+                <div class="title box">
+                    <h3 class="book_title">Title</h3>
+                    <input type="text" class="book_title_input" placeholder="Title" required>
+                </div>
+
+                <div class="author box">
+                    <h3 class="book_author">Author</h3>
+                    <input type="text" class="book_author_input" placeholder="Author" required>
+                </div>
+
+                <div class="pages box">
+                    <h3 class="book_pages">Pages</h3>
+                    <input type="number" class="book_pages_input" placeholder="Pages" required>
+                </div>
+
+                <div class="read box">
+                    <h3 class="read_check">Have you read it?</h3>
+                    <input type="checkbox" class="book_read_check" id="read_check">
+                </div>
+                <div class="submit_class box">
+                    <button class="submit" id="submit" onclick="addBookToLibrary()">ADD</button>
+                </div>
+            </div>
+
+            <div class="library" id="library">
+                
+            </div>
+</body>
+</html>
